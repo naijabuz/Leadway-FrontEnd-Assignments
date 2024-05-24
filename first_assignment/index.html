@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt Sign Up</title>
+    <link rel="icon" href="./images/form_favicon.png" />
+
+    <style>
+      body {
+        background-color: rgba(248, 241, 255, 0.767);
+      }
+
+      .account {
+        color: blue;
+      }
+
+      .required {
+        color: red;
+      }
+
+      .submit {
+        color: white;
+        background-color: #4e427e;
+        border: none;
+      }
+
+      .clear {
+        color: #4e427e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- INFORMATION SECTION -->
+      <h1>T-Shirt Sign Up</h1>
+      <p>Enter your name and size to sign up for a T-Shirt.</p>
+
+      <hr />
+
+      <p>
+        <strong>faladeyusuf54@gmail.com</strong>
+        <span class="account">Switch account</span>
+      </p>
+      <p>Not Shared</p>
+
+      <hr />
+
+      <p class="required"><sup>*</sup> Indicates required question</p>
+    </header>
+
+    <main>
+      <!-- FORM SECTION -->
+      <form>
+        <!-- NAME -->
+        <label for="name">Name <sup class="required">*</sup></label>
+        <br />
+        <br />
+        <br />
+        <input
+          type="name"
+          id="name"
+          name="name"
+          required
+          placeholder="Your answer"
+        />
+
+        <!-- SHIRT SIZE -->
+        <p>Shirt Size</p>
+
+        <!-- XS -->
+        <div>
+          <input type="radio" name="shirt_size" id="xs" value="xs" />
+          <label for="xs">XS</label>
+        </div>
+
+        <br />
+
+        <!-- S -->
+        <div>
+          <input type="radio" name="shirt_size" id="s" value="S" />
+          <label for="s">S</label>
+        </div>
+
+        <br />
+
+        <!-- M -->
+        <div>
+          <input type="radio" name="shirt_size" id="m" value="m" />
+          <label for="m">M</label>
+        </div>
+
+        <br />
+
+        <!-- L -->
+        <div>
+          <input type="radio" name="shirt_size" id="l" value="l" />
+          <label for="l">L</label>
+        </div>
+
+        <br />
+
+        <!-- XL -->
+        <div>
+          <input type="radio" name="shirt_size" id="xl" value="xl" />
+          <label for="xl">XL</label>
+        </div>
+
+        <br />
+
+        <!-- SHIRT PREVIEW -->
+        <div>
+          <p>T-Shirt Preview</p>
+          <img
+            src="./images/shirt.png"
+            alt="image of a shirt"
+            width="300px"
+            height="300px"
+            loading="lazy"
+          />
+        </div>
+
+        <br />
+
+        <!-- COMMENTS SECTION -->
+        <label for="your_answer">Other thoughts or comments</label>
+        <br />
+        <br />
+
+        <input
+          type="text"
+          name="your_answer"
+          id="your_answer"
+          placeholder="Your answer"
+        />
+
+        <br />
+        <br />
+
+        <!-- SUBMIT & CLEAR FORM SECTION -->
+        <button type="submit" class="submit">Submit</button>
+        <span class="clear"><strong>Clear form</strong></span>
+      </form>
+    </main>
+  </body>
+</html>
